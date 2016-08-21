@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../../../syntaxnet/tensorflow/google/protobuf
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://github.com/google/protobuf.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master

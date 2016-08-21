@@ -1,4 +1,10 @@
-### Install steps (OSX)
+## What this project does
+
+This project allows you to use the sentence parsing capability of Google's [Parsey McParseface](https://github.com/tensorflow/models/tree/master/syntaxnet) project directly from
+python rather than as a command line utility.
+
+
+## Install steps (OSX)
 
 bazel:
   * brew install bazel
@@ -17,6 +23,7 @@ numpy, package for scientific computing:
   * pip install numpy
 
 
-### Install steps (Windows)
+## Install steps (Windows)
 
 * I am not good with windows. If you have been able to make this work on Windows, I would gladly merge a Pull Request from you.
+

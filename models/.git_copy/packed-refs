@@ -1,0 +1,4 @@
+# pack-refs with: peeled fully-peeled 
+05057f977f5e3afb447cf763253d45ca197e1296 refs/remotes/origin/master
+17405341d4709070693ac626652ec3468d97eeb8 refs/remotes/origin/sguada-patch-1
+336d06f2217e957e31aff8815107a221526275fb refs/remotes/origin/sguada-patch-2

@@ -1,0 +1,37 @@
+# pack-refs with: peeled fully-peeled 
+d4d13a4349e4e59d67f311185ddcc1890d956d7a refs/remotes/origin/3.0.0-beta-3
+5ccbee3804946ff58388f3145044bb7c4501aff2 refs/remotes/origin/alpha-2-fix
+247ef1f0df4ebb08a2bd8d47912a9e42b88abdc2 refs/remotes/origin/benchmarks
+3470b6895aa659b7559ed678e029a5338e535f14 refs/remotes/origin/beta-3
+43ed64b1535c9a00c4988cf0e285ae06af24ce78 refs/remotes/origin/gh-pages
+6673283a56782e9c38205d1d851f80f1099f0b9c refs/remotes/origin/internal
+4f93098eb35b4868543b73d6023b07cb169c5a3a refs/remotes/origin/master
+137d6a09bbbbfa801d653224703ddc59e3700704 refs/remotes/origin/objc-framework-fix
+a139e723ad8857768bafde6a9abbb35b3ac40395 refs/remotes/origin/package-json
+5d4a8564632cb4d8d138f495e6db1304b400c197 refs/remotes/origin/protoc-alpha-3.1
+218a1e05552b75d686be6c3f88e92f1fe2455939 refs/tags/v2.4.1
+^0aa1f748bf950db26323f9198b3ccd3266707668
+3a27ae14eb81e6f3a4e261c11af91202d1f85ad4 refs/tags/v2.5.0
+^774d630bde574f5fcbb6dae6eaa0f91f7bc12967
+a21bf2e6466095c7a2cdb991017da9639cf496e5 refs/tags/v2.6.0
+4f0cc534a4429e439f9bb1d78af7612a96197d03 refs/tags/v2.6.1
+^bba83652e1be610bdb7ee1566ad18346d98b843c
+419c94b6e07f93610e5124a0be0a7ee7140006ed refs/tags/v2.6.1rc1
+69bd9e8679aae113b817faeb23818de31c4413ba refs/tags/v3.0.0-alpha-1
+^8d5d7cc6d03b00fcb7162525100fbd4cc0d1929d
+7d5cf8d7a1bd24acce56296747731051ebe1b180 refs/tags/v3.0.0-alpha-2
+3e2c8a5dd79481e1d36572cdf65be93514ba6581 refs/tags/v3.0.0-alpha-3
+5d4a8564632cb4d8d138f495e6db1304b400c197 refs/tags/v3.0.0-alpha-3.1
+6b2af83d60829f61e18c2fbccb9dcee4961145e9 refs/tags/v3.0.0-alpha-4
+^23408684b4d2bf1b25e14314413a14d542c18bc4
+8fce8933649ce09c1661ff2b5b7f6eb79badd251 refs/tags/v3.0.0-alpha-4.1
+23408684b4d2bf1b25e14314413a14d542c18bc4 refs/tags/v3.0.0-beta-1
+12fb61b292d7ec4cb14b0d60e58ed5c35adda3b7 refs/tags/v3.0.0-beta-1-bzl-fix
+519c3405674dbe101df4608cee82f9bd08cd9cad refs/tags/v3.0.0-beta-1.1
+1913b94841d5a06ede1a4195885b02c62831b414 refs/tags/v3.0.0-beta-2
+^d5fb408ddc281ffcadeb08699e65bb694656d0bd
+3470b6895aa659b7559ed678e029a5338e535f14 refs/tags/v3.0.0-beta-3
+a1938b2aa9ca86ce7ce50c27ff9737c1008d2a03 refs/tags/v3.0.0-beta-3-pre-1
+137d6a09bbbbfa801d653224703ddc59e3700704 refs/tags/v3.0.0-beta-3.1
+b6988c4e4371507791f05f1f30a526620c885520 refs/tags/v3.0.0-beta-3.2
+^d4d13a4349e4e59d67f311185ddcc1890d956d7a
