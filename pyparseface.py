@@ -254,11 +254,8 @@ def pretty_print_dict(input_dict):
   print tr(input_dict)
 
 
-def check_install():
-  pass
-
 if __name__ == "__main__":
   parsed_sentence_dict = parse_sentence("Maybe there was once a human who looked like you, and somewhere along the "
                                         "line you killed him and took his place. And your superiors don't know.")
-  print(parsed_sentence_dict)
+  print("OrderedDict: %s" % parsed_sentence_dict)
   pretty_print_dict(parsed_sentence_dict)
