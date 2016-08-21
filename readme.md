@@ -1,6 +1,6 @@
 ## What this project does
 
-This project lets you use Google's SyntaxNet Google's SyntaxNet (AKA [Parsey McParseface](https://github.com/tensorflow/models/tree/master/syntaxnet)) 
+This project lets you use Google's SyntaxNet (AKA [Parsey McParseface](https://github.com/tensorflow/models/tree/master/syntaxnet)) 
 from python code and without hours of installing and training models.  
 
 
