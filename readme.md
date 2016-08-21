@@ -1,10 +1,16 @@
 ## What this project does
 
-This project allows you to use the sentence parsing capability of Google's [Parsey McParseface](https://github.com/tensorflow/models/tree/master/syntaxnet) project directly from
-python rather than as a command line utility.
+This project lets you use Google's SyntaxNet Google's SyntaxNet (AKA [Parsey McParseface](https://github.com/tensorflow/models/tree/master/syntaxnet)) 
+from python code and without hours of installing and training models.  
 
 
-## Install steps (OSX)
+## How to run the parser
+
+```
+python main.py 
+```
+
+## How to install steps (OSX)
 
 bazel:
   * brew install bazel
