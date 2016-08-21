@@ -1,12 +1,13 @@
 import os
 import sys
-
+import time
 import asciitree
 import collections
 
 from concurrent.futures import ThreadPoolExecutor
 
 PROJECT_ROOT = os.getcwd()
+
 runfiles_path = os.path.join(PROJECT_ROOT, 'models', 'syntaxnet', 'bazel-bin', 'syntaxnet', 'parser_eval.runfiles')
 tensorflow_path = os.path.join(PROJECT_ROOT, 'models', 'syntaxnet', 'bazel-bin', 'syntaxnet', 'parser_eval.runfiles',
                                'external', 'tf')
@@ -14,52 +15,19 @@ tensorflow_path = os.path.join(PROJECT_ROOT, 'models', 'syntaxnet', 'bazel-bin',
 sys.path.append(runfiles_path)
 sys.path.append(tensorflow_path)
 
-import os.path
-import time
-
 import tensorflow as tf
-
-from tensorflow.python.platform import gfile
 from tensorflow.python.platform import tf_logging as logging
-from syntaxnet import sentence_pb2
-from syntaxnet import graph_builder
-from syntaxnet import structured_graph_builder
+from syntaxnet import sentence_pb2, structured_graph_builder
 from syntaxnet.ops import gen_parser_ops
 
-# from io import TextIOWrapper, BytesIO
-# from StringIO import StringIO
-# from subprocess import Popen, PIPE, STDOUT
 
-# CURRENT_PATH = os.getcwd()
-# other_option = os.path.dirname(os.path.realpath(__file__))
-# print("current_path=%s, other_option=%s", CURRENT_PATH, other_option)
-
-# runfiles_path = os.path.join(CURRENT_PATH, 'models', 'syntaxnet', 'bazel-bin', 'syntaxnet', 'parser_eval.runfiles')
-# sys.path.append(runfiles_path)
-
-# TODO: which of these paths is actually needed?
-# sys.path.append(CURRENT_PATH + '/models/syntaxnet/bazel-bin/syntaxnet/parser_eval.runfiles')
-# sys.path.append(os.path.join(CURRENT_PATH, 'models/syntaxnet/bazel-bin/syntaxnet/parser_eval.runfiles/'))
-# sys.path.append('/Users/plowman/projects/parseface/models/syntaxnet/bazel-bin/syntaxnet/parser_eval.runfiles/')
-# sys.path.append(
-#   '/Users/plowman/projects/parseface/models/syntaxnet/bazel-bin/syntaxnet/parser_eval.runfiles/external/six_archive')
-
-# tensorflow_path = os.path.join(CURRENT_PATH, 'models', 'syntaxnet', 'bazel-bin', 'syntaxnet', 'parser_eval.runfiles',
-#                                'external', 'tf')
-#
-# sys.path.append(tensorflow_path)
-# sys.path.append(
-#   '/Users/plowman/projects/parseface/models/syntaxnet/bazel-bin/syntaxnet/parser_eval.runfiles/external/tf')
-
-
-project_root = os.path.dirname(os.path.realpath(__file__))
-input_file_path = os.path.join(project_root, "input-file.txt")
-output_file_path = os.path.join(project_root, "output-file.txt")
-parser_path = os.path.join(project_root, 'models', 'syntaxnet', 'bazel-bin', 'syntaxnet', 'parser_eval')
-mcparseface_path = os.path.join(project_root, 'models', 'syntaxnet', 'syntaxnet', 'models', 'parsey_mcparseface')
+input_file_path = os.path.join(PROJECT_ROOT, "input-file.txt")
+output_file_path = os.path.join(PROJECT_ROOT, "output-file.txt")
+parser_path = os.path.join(PROJECT_ROOT, 'models', 'syntaxnet', 'bazel-bin', 'syntaxnet', 'parser_eval')
+mcparseface_path = os.path.join(PROJECT_ROOT, 'models', 'syntaxnet', 'syntaxnet', 'models', 'parsey_mcparseface')
 tagger_params_path = os.path.join(mcparseface_path, 'tagger-params')
 parser_params_path = os.path.join(mcparseface_path, 'parser-params')
-task_context_path = os.path.join(project_root, "custom_context.pbtxt")
+task_context_path = os.path.join(PROJECT_ROOT, "custom_context.pbtxt")
 
 """
 PARSER_EVAL=bazel-bin/syntaxnet/parser_eval
@@ -158,7 +126,6 @@ def _get_sentence_dict():
     result_dict = None
     while True:
       documents, finished = sess.run(src)
-      logging.info('Read %d documents', len(documents))
       for d in documents:
         sentence.ParseFromString(d)
         d = to_dict(sentence)
@@ -272,13 +239,6 @@ def _perform_action(action=None):
       logging.info('total tokens: %d', num_tokens)
       logging.info('Seconds elapsed in evaluation: %.2f, '
                    'eval metric: %.2f%%', time.time() - t, eval_metric)
-
-
-  # with open(output_file_path, mode="w") as output_file:
-  #   output_file.write(".")
-
-  # with open(output_file_path, mode="r") as output_file:
-  #   print output_file.read()
 
 """
 /usr/local/bin/python /Users/plowman/projects/parseface/models/syntaxnet/bazel-bin/syntaxnet/parser_eval.runfiles/syntaxnet/parser_eval.py
