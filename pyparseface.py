@@ -6,7 +6,7 @@ import collections
 
 from concurrent.futures import ThreadPoolExecutor
 
-PROJECT_ROOT = os.getcwd()
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 runfiles_path = os.path.join(PROJECT_ROOT, 'models', 'syntaxnet', 'bazel-bin', 'syntaxnet', 'parser_eval.runfiles')
 tensorflow_path = os.path.join(PROJECT_ROOT, 'models', 'syntaxnet', 'bazel-bin', 'syntaxnet', 'parser_eval.runfiles',
